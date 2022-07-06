@@ -1,0 +1,41 @@
+header{
+    background-color: var(--amarillo);
+    font-family: var(--fuenteTitular);
+    font-size: var(--cuerpo-de-texto);
+}
+
+header .logo, header .search{
+    width: 45%;
+    margin: 0 20px
+}
+
+header .search i{
+    padding: 1px;
+    background-color: var(--grisClaro);
+    border: 1px solid var(--grisOscuro);
+    border-radius: 4px;
+}
+
+header p{
+    margin: 20px 0;
+    text-align:center
+}
+
+header .links ul{
+    margin: 0 0 20px;
+
+}
+
+.burger-menu{
+    text-align: center;
+    font-size: 25px;
+}
+
+.burger-menu i{
+    text-align: center;
+    background-color: var(--celeste);
+    padding: 10px;
+    border-radius: 6px;
+    margin-bottom: 28px;
+    font-size: var(--titulares);
+}

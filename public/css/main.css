@@ -1,0 +1,13 @@
+.titulo{
+    font-size: var(--titulares)
+}
+.precio{
+    font-size: var(--precios)
+}
+.descuento{
+    font-size: var(--descuentos-y-descripciones)
+}
+.descripcion{
+    font-size: var(--descuentos-y-descripciones);
+    font-weight: bold;
+}
