@@ -5,6 +5,10 @@
     font-family: var(--fuenteTitular);
 }
 
+body{
+    background-color: var(--grisClaro);
+}
+
 a{
     color: black;
     text-decoration: none

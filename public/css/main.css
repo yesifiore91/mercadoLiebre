@@ -1,5 +1,42 @@
+main{
+    width: 90%;
+    margin: 0 auto;
+    padding: 20px 0;
+}
+
+main .banner{
+    display: none
+}
+
+main section article{
+    margin: 10px 0;
+    background-color: white;
+}
+
+main section article .contenedor{
+    border-top: 1px solid var(--grisClaro);
+}
+
+main section article .camion{
+    border: 1px solid var(--verde);
+    border-radius: 50%;
+    display: inline-block;
+    padding: 10px;
+    border-radius: 50%;
+    font-size: var(--cuerpo-de-texto);
+}
+
+main section article .imagenes{
+    width: 100%
+}
+
+main section article .camion, main section article .descuento{
+    color: var(--verde);
+}
+
 .titulo{
-    font-size: var(--titulares)
+    font-size: var(--titulares);
+    color: var(--grisOscuro);
 }
 .precio{
     font-size: var(--precios)
@@ -8,6 +45,23 @@
     font-size: var(--descuentos-y-descripciones)
 }
 .descripcion{
+    display: none;
     font-size: var(--descuentos-y-descripciones);
-    font-weight: bold;
+    color: var(--grisOscuro);
+    margin-top: 20px;
+}
+
+/* Tablet */
+@media (min-width:461px){
+    main section article{
+        box-shadow: 0px 0px 10px var(--grisOscuro);
+    }    
+    main section article h4{
+        display: block;
+    }
+}
+
+/* Desktop */
+@media (min-width:769px){
+
 }

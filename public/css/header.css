@@ -21,6 +21,10 @@ header p{
     text-align:center
 }
 
+header .links{
+    display: none;
+}
+
 header .links ul{
     margin: 0 0 20px;
 
@@ -38,4 +42,19 @@ header .links ul{
     border-radius: 6px;
     margin-bottom: 28px;
     font-size: var(--titulares);
+}
+
+/* Tablet */
+@media (min-width:461px){
+    header .links{
+    display: block;
+    }
+    header .burger-menu{
+        display: none;
+    }
+}
+
+/* Desktop */
+@media (min-width:769px){
+
 }
