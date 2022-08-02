@@ -2,12 +2,36 @@ header{
     background-color: var(--amarillo);
     font-family: var(--fuenteTitular);
     font-size: var(--cuerpo-de-texto);
+    width: 100%;
+    padding: 20px 0;
 }
 
-header .logo, header .search{
-    width: 45%;
-    margin: 0 20px
+header .logo{
+    width: 100%
 }
+
+.caja2{
+    display: inline-flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+.search{
+    display: flex;
+    flex-direction: row;
+    width: 70%;
+}
+
+header .lupa{
+    padding: 1px;
+    border-radius: 4px;
+    width: 10%;
+}
+
+header .caja2 ,.cajaLogo, .search{
+    margin: 0 10px;
+}
+
 
 header .search i{
     padding: 1px;
@@ -46,6 +70,11 @@ header .links ul{
 
 /* Tablet */
 @media (min-width:461px){
+
+    .header .titular{
+        display: block
+    }
+
     header .links{
     display: block;
     }
