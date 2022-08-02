@@ -8,29 +8,39 @@ main .banner{
     display: none
 }
 
-main section article{
+main article{
     margin: 10px 0;
     background-color: white;
 }
 
-main section article .contenedor{
+main article .contenedor{
     border-top: 1px solid var(--grisClaro);
 }
 
-main section article .camion{
-    border: 1px solid var(--verde);
+main article .camion{
+    display: block;
+    font-size: 16px;
+    padding: 5px;
+    width: 30px;
+    height: 30px;
+    border: 1px solid #39b54a;
+    background-color: #FFF;
     border-radius: 50%;
-    display: inline-block;
-    padding: 10px;
-    border-radius: 50%;
-    font-size: var(--cuerpo-de-texto);
+    position: relative;
+    left: 90%;
+    top: -15px
 }
 
-main section article .imagenes{
+main article .cajaPrecioDescuento{
+    display: flex;
+    flex-direction: row;
+}
+
+main article .imagenes{
     width: 100%
 }
 
-main section article .camion, main section article .descuento{
+main article .camion, main section article .descuento{
     color: var(--verde);
 }
 
@@ -39,13 +49,14 @@ main section article .camion, main section article .descuento{
     color: var(--grisOscuro);
 }
 .precio{
-    font-size: var(--precios)
+    font-size: var(--precios);
+    width: 30%
 }
 .descuento{
-    font-size: var(--descuentos-y-descripciones)
+    font-size: var(--descuentos-y-descripciones);
+    width: 70%
 }
 .descripcion{
-    display: none;
     font-size: var(--descuentos-y-descripciones);
     color: var(--grisOscuro);
     margin-top: 20px;
@@ -53,15 +64,45 @@ main section article .camion, main section article .descuento{
 
 /* Tablet */
 @media (min-width:461px){
-    main section article{
+    main article{
         box-shadow: 0px 0px 10px var(--grisOscuro);
     }    
-    main section article h4{
-        display: block;
+    
+    .titulo{
+        margin: 30px 30px
+    }
+
+    main section article{
+        width: 40%;
+        
+    }
+    
+    main .section1{
+        display: flex;
+        flex-wrap: wrap;
+        flex-direction: row;
+        justify-content: space-between;
+    }
+    
+    main .section2{
+        display: flex;
+        flex-wrap: wrap;
+        flex-direction: row;
+        justify-content: space-between;
     }
 }
 
 /* Desktop */
 @media (min-width:769px){
+    main section article{
+        width: 20%;
+    }
+    main article{
+        box-shadow: 0px 0px 10px var(--grisOscuro);
+    }    
+    
+    .titulo{
+        margin: 30px 30px
+    }
 
 }
