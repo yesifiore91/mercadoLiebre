@@ -40,9 +40,11 @@ header .search i{
     border-radius: 4px;
 }
 
-header p{
+header .titular{
     margin: 20px 0;
-    text-align:center
+    text-align: center;
+    font-family: var(--fuenteTitular);
+    font-weight: normal;
 }
 
 header .links{
@@ -70,14 +72,41 @@ header .links ul{
 
 /* Tablet */
 @media (min-width:461px){
+    .caja1{
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        width: 100%;
+    }
+    .caja1 .caja2{
+        width: 65%;
+    }
 
-    .header .titular{
-        display: block
+    header .titular{
+        display: block;
+        width: 35%;
+        margin: none;
     }
 
     header .links{
-    display: block;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
     }
+
+    header .links ul{
+        display: flex;
+        flex-direction: row;
+    }
+
+    header .links ul li{
+        margin:0 5px ;
+        margin-top: 30px;
+
+    }
+
+
+    
     header .burger-menu{
         display: none;
     }

@@ -27,13 +27,14 @@ main article .camion{
     background-color: #FFF;
     border-radius: 50%;
     position: relative;
-    left: 90%;
+    left: 75%;
     top: -15px
 }
 
 main article .cajaPrecioDescuento{
     display: flex;
     flex-direction: row;
+    padding: 10px;
 }
 
 main article .imagenes{
@@ -62,7 +63,7 @@ main article .camion, main section article .descuento{
 .descripcion{
     font-size: var(--descuentos-y-descripciones);
     color: var(--grisOscuro);
-    margin-top: 20px;
+    padding: 20px 20px
 }
 
 /* Tablet */
@@ -74,6 +75,10 @@ main article .camion, main section article .descuento{
     
     .titulo{
         margin: 30px 30px
+    }
+
+    .precio{
+        margin-right: 50px;
     }
 
     main section article{
