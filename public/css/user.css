@@ -1,0 +1,42 @@
+main form, .perfil, .check{
+    display: flex;
+    flex-direction: column;
+}
+
+main form small{
+    color: red;
+}
+
+main form input{
+    height: 30px;
+    margin: 10px 0;
+    border-radius: 5px;
+    border: 1px solid white
+}
+
+.intereses{
+    display: flex;
+    flex-direction: column;
+}
+
+.titular{
+    padding: 15px 0;
+}
+
+.user{
+    height: 10px;
+}
+
+.botones{
+    display: flex;
+    flex-direction: row;
+    justify-content: center; 
+}
+
+main form .botones button, main form .botones button a{
+    width: 20%;
+    height: 30px;
+    margin: 10px;
+    color: white;
+    background-color: #1259C3 ;
+}
