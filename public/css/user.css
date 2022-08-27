@@ -15,8 +15,13 @@ main form input{
 }
 
 .intereses{
-    display: flex;
-    flex-direction: column;
+    display: inline-flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    
+    
+
 }
 
 .titular{
